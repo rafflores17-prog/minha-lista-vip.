@@ -2,28 +2,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIP APKBUGADO MASTER</title><style>
-body{background:#020617;color:#00ff9c;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
-.card{background:#020617;padding:20px;border-radius:15px;width:420px;border:1px solid #00ff9c;text-align:center;box-shadow:0 0 20px #00ff9c33}
-button,input,a{width:100%;padding:12px;border:none;border-radius:10px;margin-top:10px;text-decoration:none;display:block}
-button{background:#00ff9c;color:#000;font-weight:bold;cursor:pointer}
-input{background:#000;color:#00ff9c;text-align:center}
-a{background:#001f1a;color:#00ff9c;font-size:13px}
-pre{margin-top:10px;font-size:12px;background:#000;padding:10px;border-radius:10px;white-space:pre-wrap;text-align:left}
-.scan{font-size:11px;margin-top:5px;color:#00ffaa}
-.info{font-size:11px;margin-top:5px;color:#00ffaa}
-img{width:80px;margin-bottom:10px}
-</style></head>
-<body><div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png">
-<h3>🔐 GRUPO VIP PAINEL</h3><a href="https://is.gd/th2b0P" target="_blank">💎 ENTRAR GRUPO VIP</a> <a href="https://t.me/ApkBugado" target="_blank">📢 GRUPO ABERTO</a>
+<title>VIP HACKER SUPREMA</title><style>
+body{
+  background:#000;
+  color:#00ff9c;
+  font-family:monospace;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin:0;
+}
 
-<input type="password" id="senha" placeholder="Digite código VIP">
-<button onclick="desbloquear()">DESBLOQUEAR</button><div id="painel" style="display:none;">
-<button onclick="gerar()">GERAR LISTA</button>
-<button onclick="copiar()">COPIAR</button><div class="scan" id="scan"></div>
-<div class="info" id="info"></div>
-<pre id="out">Aguardando...</pre>
-</div></div><script>
+.card{
+  width:430px;
+  padding:20px;
+  border:1px solid #00ff9c;
+  border-radius:15px;
+  box-shadow:0 0 30px #00ff9c55;
+  text-align:center;
+}
+
+button,input,a{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border-radius:10px;
+  border:none;
+}
+
+button{
+  background:#00ff9c;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+input{
+  background:#000;
+  color:#00ff9c;
+  border:1px solid #00ff9c;
+}
+
+a{
+  background:#001f1a;
+  color:#00ff9c;
+  text-decoration:none;
+}
+
+pre{
+  background:#000;
+  padding:10px;
+  border-radius:10px;
+  margin-top:10px;
+  font-size:12px;
+  white-space:pre-wrap;
+  text-align:left;
+}
+
+.scan{
+  font-size:12px;
+  margin-top:10px;
+}
+
+.bar{
+  width:0%;
+  height:5px;
+  background:#00ff9c;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+.status{
+  font-size:11px;
+  margin-top:5px;
+}
+
+</style></head>
+<body><div class="card"><h3>💻 VIP HACKER SUPREMA</h3><a href="https://is.gd/th2b0P" target="_blank">💎 GRUPO VIP</a> <a href="https://t.me/ApkBugado" target="_blank">📢 GRUPO FREE</a>
+
+<input type="password" id="senha" placeholder="Código VIP">
+<button onclick="desbloquear()" id="btnLogin">DESBLOQUEAR</button><div id="painel" style="display:none;"><button onclick="gerar()">GERAR LISTA</button> <button onclick="copiar()">COPIAR</button>
+
+<div class="scan" id="scan"></div>
+<div class="bar" id="bar"></div>
+<div class="status" id="status"></div>
+<pre id="out">Aguardando...</pre></div></div><script>
 
 const senhaCorreta = "1234";
 const base = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
@@ -32,114 +95,119 @@ const total = 2;
 let usados = [];
 
 function desbloquear(){
-let s = document.getElementById('senha').value;
-if(s === senhaCorreta){
- document.getElementById('painel').style.display = 'block';
-}else{
- alert("Código inválido!");
-}
+ let s = document.getElementById('senha').value.trim();
+
+ if(s === senhaCorreta){
+   document.getElementById('painel').style.display = 'block';
+   document.getElementById('senha').style.display = 'none';
+   document.getElementById('btnLogin').style.display = 'none';
+ }else{
+   alert('Código inválido');
+ }
 }
 
 function proximoMes(){
-let d = new Date();
-d.setMonth(d.getMonth()+1);
-return d.toLocaleDateString();
+ let d = new Date();
+ d.setMonth(d.getMonth()+1);
+ return d.toLocaleDateString();
+}
+
+function fakePing(){
+ return Math.floor(Math.random()*80)+20;
+}
+
+function qualidade(){
+ let q = ["SD","HD","FULL HD","4K"];
+ return q[Math.floor(Math.random()*q.length)];
+}
+
+function usuariosFake(){
+ return Math.floor(Math.random()*500)+50;
 }
 
 async function gerar(){
 
-let scan = document.getElementById('scan');
-let out = document.getElementById('out');
-let info = document.getElementById('info');
+ let scan = document.getElementById('scan');
+ let bar = document.getElementById('bar');
+ let out = document.getElementById('out');
+ let status = document.getElementById('status');
 
-let etapas = [
- "🔍 Iniciando scanner...",
- "🌐 Conectando ao servidor...",
- "📡 Buscando combos ativos...",
- "⚙️ Processando dados...",
- "✅ Finalizando..."
-];
+ out.textContent = "🔄 Iniciando sistema...";
+ bar.style.width = "0%";
 
-for(let i=0;i<etapas.length;i++){
-  scan.textContent = etapas[i];
-  await new Promise(r=>setTimeout(r,300));
-}
+ let etapas = [
+  "🔍 Escaneando servidores...",
+  "🌐 Conectando rede...",
+  "📡 Buscando dados...",
+  "⚙️ Analisando qualidade...",
+  "🚀 Finalizando..."
+ ];
 
-let tentativas = 0;
+ for(let i=0;i<etapas.length;i++){
+   scan.textContent = etapas[i];
+   bar.style.width = ((i+1)*20)+"%";
+   await new Promise(r=>setTimeout(r,400));
+ }
 
-while(tentativas < 10){
-try{
+ let tentativas = 0;
 
-let n = Math.floor(Math.random() * total) + 1;
-let url = `${base}combo${n}.txt`;
+ while(tentativas < 10){
+ try{
 
-let res = await fetch(url);
-let txt = await res.text();
+ let n = Math.floor(Math.random()*total)+1;
+ let url = `${base}combo${n}.txt`;
 
-let blocos = txt.split(/┏●-•~¹°”ˆ˜¨/);
-let validos = [];
+ let res = await fetch(url);
+ let txt = await res.text();
 
-blocos.forEach(b=>{
-  let host = (b.match(/Host[:►]\s*(http[^\s]+)/i)||[])[1];
-  let user = (b.match(/Usu[aá]rio[:►]\s*(.*)/i)||[])[1];
-  let pass = (b.match(/Senha[:►]\s*(.*)/i)||[])[1];
+ let blocos = txt.split(/┏●-•~¹°”ˆ˜¨/);
+ let validos = [];
 
-  if(host && user && pass){
-    let chave = user+pass;
-    if(!usados.includes(chave)){
-      validos.push({host,user,pass,chave});
-    }
-  }
-});
+ blocos.forEach(b=>{
+   let host = (b.match(/Host[:►]\s*(http[^\s]+)/i)||[])[1];
+   let user = (b.match(/Usu[aá]rio[:►]\s*(.*)/i)||[])[1];
+   let pass = (b.match(/Senha[:►]\s*(.*)/i)||[])[1];
 
-if(validos.length === 0){
- usados = [];
- tentativas++;
- continue;
-}
+   if(host && user && pass){
+     let chave = user+pass;
+     if(!usados.includes(chave)){
+       validos.push({host,user,pass,chave});
+     }
+   }
+ });
 
-let c = validos[Math.floor(Math.random()*validos.length)];
-usados.push(c.chave);
+ if(validos.length === 0){
+   usados = [];
+   tentativas++;
+   continue;
+ }
 
-let m3u = `${c.host}/get.php?username=${c.user}&password=${c.pass}&type=m3u_plus&output=m3u8`;
+ let c = validos[Math.floor(Math.random()*validos.length)];
+ usados.push(c.chave);
 
-let agora = new Date().toLocaleString();
-let exp = proximoMes();
+ let m3u = `${c.host}/get.php?username=${c.user}&password=${c.pass}&type=m3u_plus&output=m3u8`;
 
-let resultado = `📺 LISTA VIP APKBUGADO
+ let resultado = `📺 LISTA VIP APKBUGADO\n\n🔗 ${m3u}\n\n⚙️ XTREAM\nHost: ${c.host}\nUser: ${c.user}\nPass: ${c.pass}\n\n📡 Ping: ${fakePing()}ms\n📺 Qualidade: ${qualidade()}\n👥 Online: ${usuariosFake()} usuários\n\n📅 Expira: ${proximoMes()}`;
 
-🔗 M3U:
-${m3u}
+ out.textContent = resultado;
+ scan.textContent = "🟢 ONLINE";
+ status.textContent = "🔥 Servidor Premium Detectado";
+ bar.style.width = "100%";
 
-⚙️ XTREAM:
-Host: ${c.host}
-User: ${c.user}
-Pass: ${c.pass}
+ return;
 
-📅 Expira: ${exp}
+ }catch(e){
+   tentativas++;
+ }
+ }
 
-━━━━━━━━━━━━━━
-⏱️ Scan: ${agora}`;
-
-out.textContent = resultado;
-scan.textContent = "🟢 Online";
-info.textContent = `📊 Combos disponíveis: ${validos.length} | Usados: ${usados.length}`;
-
-return;
-
-}catch(e){
- tentativas++;
-}
-}
-
-out.textContent = "Erro ao gerar!";
-
+ out.textContent = "Erro ao gerar";
 }
 
 function copiar(){
-let texto = document.getElementById('out').textContent;
-navigator.clipboard.writeText(texto);
-alert('Copiado!');
+ let texto = document.getElementById('out').textContent;
+ navigator.clipboard.writeText(texto);
+ alert('Copiado!');
 }
 
 </script></body>
