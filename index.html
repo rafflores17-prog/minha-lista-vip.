@@ -1,92 +1,46 @@
 <!DOCTYPE html><html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painel VIP IPTV</title>
-  <style>
-    body {
-      background: #0f172a;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }.card {
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 20px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-h1 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  border: none;
-  border-radius: 10px;
-  background: #22c55e;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #16a34a;
-}
-
-.link {
-  margin-top: 15px;
-  font-size: 12px;
-  word-break: break-all;
-  color: #38bdf8;
-}
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel VIP GitHub</title>
+<style>
+body{background:#020617;color:#00ff9c;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.card{background:#020617;padding:20px;border-radius:15px;width:420px;border:1px solid #00ff9c;text-align:center}
+button{width:100%;padding:12px;border:none;border-radius:10px;background:#00ff9c;color:#000;font-weight:bold;cursor:pointer;margin-top:10px}
+pre{margin-top:10px;font-size:12px;background:#000;padding:10px;border-radius:10px;white-space:pre-wrap}
+</style>
 </head>
-<body>  <div class="card">
-    <h1>🔥 Painel VIP IPTV</h1><input type="text" id="host" placeholder="Host (http://servidor.com)">
-<input type="text" id="user" placeholder="Usuário">
-<input type="password" id="pass" placeholder="Senha">
+<body>
+<div class="card">
+<h3>💎 VIP APKBUGADO (AUTO)</h3><button onclick="gerar()">GERAR LISTA</button> <button onclick="copiar()">COPIAR</button>
 
-<button onclick="gerarLista()">GERAR LISTA</button>
+<pre id="out">Clique em GERAR...</pre></div>
+<script>// 🔗 COLOQUE AQUI SEU TXT DO GITHUB const urlTXT = "https://raw.githubusercontent.com/SEUUSER/SEUREPO/main/combos.txt";
 
-<div id="resultado" class="link"></div>
+function gerar(){ fetch(urlTXT) .then(res=>res.text()) .then(txt=>{
 
-  </div>  <script>
-    function gerarLista() {
-      const host = document.getElementById('host').value;
-      const user = document.getElementById('user').value;
-      const pass = document.getElementById('pass').value;
+let banco=[];
 
-      if (!host || !user || !pass) {
-        alert('Preencha tudo!');
-        return;
-      }
+let blocos = txt.split("Host");
 
-      const url = `${host}/get.php?username=${user}&password=${pass}&type=m3u_plus&output=m3u8`;
+blocos.forEach(b=>{ let host = (b.match(/(http[^\s]+)/)||[])[1]; let user = (b.match(/Usuário.►\s(.)/)||[])[1]; let pass = (b.match(/Senha.►\s*(.*)/)||[])[1];
 
-      document.getElementById('resultado').innerHTML = `\n        ✅ Lista gerada:<br><br>
-        <a href="${url}" target="_blank">${url}</a>
-      `;
-    }
-  </script></body>
+if(host && user && pass){ banco.push({host,user,pass}); } });
+
+if(banco.length===0){ document.getElementById('out').textContent="Nenhum combo encontrado!"; return; }
+
+let c = banco[Math.floor(Math.random()*banco.length)];
+
+let m3u = ${c.host}/get.php?username=${c.user}&password=${c.pass}&type=m3u_plus&output=m3u8;
+
+let txtFinal = 📺 LISTA VIP APKBUGADO\n\n🔗 M3U:\n${m3u}\n\n⚙️ XTREAM:\nHost: ${c.host}\nUser: ${c.user}\nPass: ${c.pass};
+
+document.getElementById('out').textContent = txtFinal;
+
+}) .catch(()=>{ document.getElementById('out').textContent="Erro ao carregar combos!"; }); }
+
+function copiar(){ let texto=document.getElementById('out').textContent; navigator.clipboard.writeText(texto); alert('Copiado!'); }
+
+</script>
+</body>
 </html>
