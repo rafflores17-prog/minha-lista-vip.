@@ -1,1 +1,1 @@
-# minha-lista-vip.
+# painel-vip
