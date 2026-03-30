@@ -72,7 +72,8 @@ let url = `${base}combo${n}.txt`;
 let res = await fetch(url);
 let txt = await res.text();
 
-let blocos = txt.split("─────────────────");
+let // 🔥 divide por blocos principais (Top Scanner)
+let blocos = txt.split(/┏●-•~¹°”ˆ˜¨/);
 let validos = [];
 
 blocos.forEach(b=>{
