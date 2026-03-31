@@ -1,292 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PAINEL VIP APKBUGADO PRO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP_PAINEL APKBUGADO</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
 
-<style>
-body {
-    background: #000;
-    color: #fff;
-    font-family: 'Courier New', monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
+        .painel-vip {
+            width: 100%;
+            max-width: 360px;
+            background: #000;
+            border: 2px solid #00ff9c;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 156, 0.4);
+            text-align: center;
+            box-sizing: border-box;
+        }
 
-/* CARD PRINCIPAL */
-.card-painel {
-    background: radial-gradient(circle at top, #0a0a0a, #000);
-    width: 100%;
-    max-width: 420px;
-    padding: 25px 20px;
-    border: 1px solid #00ff9c;
-    border-radius: 20px;
-    box-shadow: 
-        0 0 25px rgba(0,255,156,0.5),
-        inset 0 0 15px rgba(0,255,156,0.2);
-    text-align: center;
-}
+        .titulo-neon {
+            color: #00ff9c;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 5px #00ff9c;
+        }
 
-/* TÍTULO */
-.title-hacker {
-    color: #00ff9c;
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
+        .cadeado-main {
+            width: 140px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px #00ff9c);
+        }
 
-/* BOTÕES TOPO */
-.links-topo {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
+        .grid-atalhos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
 
-.btn-atalho {
-    flex: 1;
-    padding: 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 11px;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    transition: 0.2s;
-}
+        .btn-atalho {
+            background: rgba(0, 255, 156, 0.1);
+            border: 1px solid #00ff9c;
+            color: #00ff9c;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-.btn-vip-grupo {
-    background: #003d26;
-    border: 1px solid #00ff9c;
-    color: #00ff9c;
-}
+        input {
+            width: 100%;
+            padding: 12px;
+            background: #111;
+            border: 1px solid #00ff9c33;
+            border-radius: 10px;
+            color: #fff;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
 
-.btn-free-canal {
-    background: #111;
-    border: 1px solid #333;
-    color: #00ff9c;
-}
+        .btn-principal {
+            width: 100%;
+            padding: 14px;
+            background: #00ff9c;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px #00ff9c;
+        }
 
-.btn-atalho:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
+        /* 🛡️ BOX DE RESULTADO PROTEGIDA */
+        .caixa-dados {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 15px;
+            margin-top: 20px;
+            padding: 15px;
+            text-align: left;
+            font-size: 12px;
+            color: #ccc;
+            line-height: 1.6;
+            /* Trava de segurança crucial */
+            white-space: pre-wrap;
+            word-break: break-all;
+            display: none; /* Oculto até clicar em gerar */
+        }
 
-/* INPUT */
-input {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
-    border-radius: 12px;
-    border: 1px solid #00ff9c55;
-    background: #000;
-    color: #00ff9c;
-    text-align: center;
-    font-size: 15px;
-}
+        .status-on {
+            color: #00ff9c;
+            font-size: 11px;
+            margin: 10px 0;
+            font-weight: bold;
+            display: none;
+        }
 
-/* BOTÕES */
-button {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
-    border-radius: 12px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    background: linear-gradient(90deg, #00ff9c, #00cc7a);
-    color: #000;
-    box-shadow: 0 0 15px rgba(0,255,156,0.4);
-    transition: 0.2s;
-}
-
-button:hover {
-    transform: scale(1.03);
-    filter: brightness(1.2);
-}
-
-button:disabled {
-    background: #222;
-    color: #555;
-    box-shadow: none;
-}
-
-/* STATUS */
-.loader-status {
-    font-size: 11px;
-    margin-top: 10px;
-    color: #00ff9c;
-    font-weight: bold;
-    text-shadow: 0 0 5px #00ff9c;
-}
-
-/* 🔥 CORREÇÃO DO BUG */
-pre#out {
-    background: #050505;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 12px;
-    font-size: 12px;
-    text-align: left;
-    color: #00ff9c;
-    line-height: 1.5;
-    border: 1px solid #00ff9c33;
-
-    max-height: 260px;
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    white-space: pre-wrap;
-    word-break: break-word;
-}
-
-.destaque-neon { color: #00ff9c; }
-.data-gerado { font-size: 10px; color: #aaa; }
-</style>
+        .btn-copia {
+            width: 100%;
+            padding: 10px;
+            background: transparent;
+            color: #00ff9c;
+            border: 1px solid #00ff9c;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="card-painel">
-    <div class="title-hacker">[ VIP_PAINEL ]</div>
+<div class="painel-vip">
+    <div class="titulo-neon">[ VIP_PAINEL ]</div>
+    
+    <img src="1000156293.png" class="cadeado-main" alt="VIP">
 
-    <div class="links-topo">
-        <a href="https://is.gd/th2b0P" target="_blank" class="btn-atalho btn-vip-grupo">💎 VIP</a>
-        <a href="https://t.me/ApkBugado" target="_blank" class="btn-atalho btn-free-canal">📢 CANAL</a>
+    <div class="grid-atalhos">
+        <a href="https://t.me/ApkBugadoGrupo" class="btn-atalho">💎 GRUPO VIP</a>
+        <a href="https://t.me/ApkBugado" class="btn-atalho">📢 CANAL</a>
     </div>
 
-    <div id="login-box">
-        <input type="password" id="senha" placeholder="DIGITE CÓDIGO VIP">
-        <button onclick="login()">ENTRAR</button>
+    <div id="area-login">
+        <input type="password" id="key" placeholder="Digite código VIP">
+        <button class="btn-principal" onclick="validar()">DESBLOQUEAR</button>
     </div>
 
-    <div id="painel" style="display:none;">
-        <button id="btn-gerar" onclick="gerar()">⚡ GERAR LISTA</button>
-        <button onclick="copiar()" style="background:#111; color:#00ff9c; border:1px solid #00ff9c33; font-size:11px;">
-            📋 COPIAR
-        </button>
+    <div id="area-gerador" style="display:none;">
+        <button class="btn-principal" onclick="gerar()">⚡ GERAR NOVA LISTA PREMIUM</button>
+        
+        <div class="status-on" id="status-txt">🟢 STATUS: LISTA PRONTA (81 ON)</div>
 
-        <div class="loader-status" id="status">STATUS: AGUARDANDO...</div>
-        <pre id="out">Clique em GERAR</pre>
+        <div class="caixa-dados" id="box-result">
+            💎 <span style="color:#00ff9c">VIP APKBUGADO PREMIUM</span><br><br>
+            🔗 URL M3U:<br>
+            <span id="link-m3u" style="color:#fff"></span><br><br>
+            ⚙️ DADOS XTREAM:<br>
+            Host: <span id="xtream-host"></span><br>
+            User: <span id="xtream-user"></span><br>
+            Pass: <span id="xtream-pass"></span><br><br>
+            📅 Vencimento: 30/04/2026
+        </div>
+
+        <button class="btn-copia" id="btn-copia" onclick="copiar()">📋 COPIAR DADOS</button>
     </div>
 </div>
 
 <script>
-const senhaCorreta = "1234";
-const baseGithub = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
-
-const arquivos = [];
-for(let i = 1; i <= 30; i++) arquivos.push(`combo${i}.txt`);
-
-let listaGlobal = [];
-let usados = [];
-let emProcesso = false;
-
-function login(){
-    let s = senha.value.trim();
-    if(s === senhaCorreta){
-        painel.style.display = "block";
-        document.getElementById('login-box').style.display = "none";
-    } else {
-        alert("Código inválido!");
-        senha.value = '';
-    }
-}
-
-function proximoMes(){
-    let d = new Date();
-    d.setMonth(d.getMonth()+1);
-    return d.toLocaleDateString();
-}
-
-function extrairM3U(texto){
-    let lista = [];
-    let links = texto.match(/http[^\s]+get\.php[^\s]+/g) || [];
-    
-    links.forEach(link=>{
-        let user = (link.match(/username=([^&]+)/)||[])[1];
-        let pass = (link.match(/password=([^&]+)/)||[])[1];
-        let host = link.split("/get.php")[0];
-        if(user && pass && host) lista.push({link,user,pass,host,key:user+pass});
-    });
-    return lista;
-}
-
-async function carregarBancoDeDados(){
-    if(listaGlobal.length > 0) return;
-
-    out.textContent = "📡 SINCRONIZANDO...";
-    btnGerar.disabled = true;
-
-    for(let f of arquivos){
-        try{
-            let r = await fetch(baseGithub + f);
-            if(r.ok){
-                let txt = await r.text();
-                listaGlobal = listaGlobal.concat(extrairM3U(txt));
-            }
-        }catch(e){}
+    function validar() {
+        const pass = document.getElementById('key').value;
+        if(pass === "9085") {
+            document.getElementById('area-login').style.display = "none";
+            document.getElementById('area-gerador').style.display = "block";
+        } else {
+            alert("Código VIP inválido!");
+        }
     }
 
-    let unico = {};
-    listaGlobal.forEach(c => unico[c.key] = c);
-    listaGlobal = Object.values(unico);
-
-    btnGerar.disabled = false;
-    out.textContent = "PRONTO PARA GERAR";
-}
-
-async function gerar(){
-    if(emProcesso) return;
-    emProcesso = true;
-
-    btnGerar.disabled = true;
-    out.textContent = "⚙️ PROCESSANDO...";
-    status.textContent = "CONECTANDO...";
-
-    if(listaGlobal.length === 0) await carregarBancoDeDados();
-
-    let fases = ["MINERANDO...", "VALIDANDO...", "FINALIZANDO..."];
-    for(let f of fases){
-        status.textContent = f;
-        await new Promise(r => setTimeout(r, 500));
+    function gerar() {
+        // Exemplo de link que costuma quebrar o layout
+        const urlM3U = "http://bluebox.click:80/get.php?username=524c283068b001acf4a37f9515741237&password=3cf01a628867c662997c&type=m3u_plus&output=ts";
+        
+        document.getElementById('link-m3u').innerText = urlM3U;
+        document.getElementById('xtream-host').innerText = "http://bluebox.click:80";
+        document.getElementById('xtream-user').innerText = "524c283068b001acf4a37f951...";
+        document.getElementById('xtream-pass').innerText = "3cf01a628867c662997c";
+        
+        document.getElementById('status-txt').style.display = "block";
+        document.getElementById('box-result').style.display = "block";
+        document.getElementById('btn-copia').style.display = "block";
     }
 
-    let disponivel = listaGlobal.filter(c => !usados.includes(c.key));
-    if(disponivel.length === 0){ usados = []; disponivel = listaGlobal; }
-
-    let combo = disponivel[Math.floor(Math.random() * disponivel.length)];
-    usados.push(combo.key);
-
-    out.textContent =
-`💎 VIP PREMIUM
-
-🔗 URL:
-${combo.link}
-
-⚙️ XTREAM:
-Host: ${combo.host}
-User: ${combo.user}
-Pass: ${combo.pass}
-
-📅 Vencimento: ${proximoMes()}
-━━━━━━━━━━━━━━
-⏱️ ${new Date().toLocaleTimeString()}`;
-
-    status.textContent = "PRONTO ✔";
-    btnGerar.disabled = false;
-    emProcesso = false;
-}
-
-function copiar(){
-    navigator.clipboard.writeText(out.textContent);
-    alert("Copiado!");
-}
+    function copiar() {
+        const texto = document.getElementById('box-result').innerText;
+        navigator.clipboard.writeText(texto);
+        alert("Copiado!");
+    }
 </script>
 
 </body>
