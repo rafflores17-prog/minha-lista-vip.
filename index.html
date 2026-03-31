@@ -1,137 +1,87 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>VIP GERADOR</title>
-
-<style>
-body{background:#000;color:#00ff9c;font-family:monospace;text-align:center}
-.card{margin:50px auto;width:400px;padding:20px;border:1px solid #00ff9c;border-radius:15px}
-button,input{width:100%;padding:10px;margin-top:10px}
-pre{background:#000;padding:10px;margin-top:10px;text-align:left}
-</style>
-</head>
-
-<body>
-
-<div class="card">
-<h3>💻 GERADOR VIP</h3>
-
-<input type="password" id="senha" placeholder="Código">
-<button onclick="login()">ENTRAR</button>
-
-<div id="painel" style="display:none;">
-<button onclick="gerar()">GERAR</button>
-<pre id="out">...</pre>
-</div>
-
-</div>
-
 <script>
 
 const senhaCorreta = "1234";
-
-// 🔥 seus combos
 const base = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
 const arquivos = ["combo1.txt","combo2.txt"];
 
+let listaGlobal = [];
 let usados = [];
 
 function login(){
  let s = document.getElementById('senha').value.trim();
- if(s===senhaCorreta){
-  document.getElementById('painel').style.display="block";
+ if(s === senhaCorreta){
+   document.getElementById('painel').style.display = "block";
  }
 }
 
 // 📅 expiração fake
 function proximoMes(){
- let d=new Date();
+ let d = new Date();
  d.setMonth(d.getMonth()+1);
  return d.toLocaleDateString();
 }
 
-// 🔥 parser inteligente (funciona com QUALQUER formato)
-function extrairCombos(texto){
+// 🔥 pega direto M3U (SEM ERRO)
+function extrairM3U(texto){
 
- let lista=[];
+ let matches = texto.match(/http[^\\s]+get\\.php\\?username=[^\\s]+/g) || [];
 
- // pega todos possíveis hosts
- let hosts = texto.match(/http[^\\s]+:[0-9]+/g) || [];
+ return matches.map(link => {
+   let url = new URL(link);
 
- // pega usuários
- let users = texto.match(/Usu[aá]rio[:►]\\s*([^\\n]+)/gi) || [];
-
- // pega senhas
- let pass = texto.match(/Senha[:►]\\s*([^\\n]+)/gi) || [];
-
- // limpa
- users = users.map(x=>x.split(/[:►]/)[1].trim());
- pass = pass.map(x=>x.split(/[:►]/)[1].trim());
-
- // junta
- for(let i=0;i<users.length;i++){
-   let host = hosts[i] || hosts[0];
-   if(host && users[i] && pass[i]){
-     lista.push({
-       host,
-       user: users[i],
-       pass: pass[i],
-       key: users[i]+pass[i]
-     });
-   }
- }
-
- return lista;
+   return {
+     host: url.origin,
+     user: url.searchParams.get("username"),
+     pass: url.searchParams.get("password"),
+     link: link,
+     key: url.searchParams.get("username") + url.searchParams.get("password")
+   };
+ });
 }
 
-// 🔥 carrega tudo
+// 🔥 carrega tudo UMA VEZ
 async function carregar(){
 
- let tudo=[];
+ if(listaGlobal.length > 0) return;
 
  for(let f of arquivos){
    try{
-     let r = await fetch(base+f);
+     let r = await fetch(base + f);
      let txt = await r.text();
 
-     let combos = extrairCombos(txt);
-     tudo = tudo.concat(combos);
+     let combos = extrairM3U(txt);
+     listaGlobal = listaGlobal.concat(combos);
 
    }catch(e){}
  }
 
  // remove duplicados
  let unico = {};
- tudo.forEach(c => unico[c.key]=c);
-
- return Object.values(unico);
+ listaGlobal.forEach(c => unico[c.key] = c);
+ listaGlobal = Object.values(unico);
 }
 
 // 🚀 GERAR
 async function gerar(){
 
  let out = document.getElementById('out');
- out.textContent="Carregando...";
+ out.textContent = "Carregando...";
 
- let lista = await carregar();
+ await carregar();
 
- // remove usados
- let disponivel = lista.filter(c=>!usados.includes(c.key));
+ let disponivel = listaGlobal.filter(c => !usados.includes(c.key));
 
- if(disponivel.length===0){
-   usados=[];
-   disponivel=lista;
+ if(disponivel.length === 0){
+   usados = [];
+   disponivel = listaGlobal;
  }
 
  let c = disponivel[Math.floor(Math.random()*disponivel.length)];
  usados.push(c.key);
 
- let m3u = `${c.host}/get.php?username=${c.user}&password=${c.pass}&type=m3u_plus&output=m3u8`;
-
  out.textContent = `📺 LISTA VIP APKBUGADO
 
-🔗 ${m3u}
+🔗 ${c.link}
 
 ⚙️ XTREAM
 Host: ${c.host}
@@ -139,10 +89,6 @@ User: ${c.user}
 Pass: ${c.pass}
 
 📅 Expira: ${proximoMes()}`;
-
 }
 
 </script>
-
-</body>
-</html>
