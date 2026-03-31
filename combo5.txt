@@ -1,0 +1,552 @@
+┏●•~¹°”ˆ˜¨ 𝙏𝙚𝙨𝙩𝙚 𝙙𝙤 𝙎𝙚𝙧𝙫𝙞𝙙𝙤𝙧 ¨˜ˆ”°¹~•
+┣─⭐Desempenho ► ☆☆☆☆☆ FALHOU
+┣─⚡Velocidade ► Teste Falhou
+┣─📡Teste ► 0 Canais OK | 0 Falhas
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─📍IP do Host ► 172.67.185.202
+┣─📺Canais ► Falha
+┣─🎬Filmes ► Falha
+┣─🎞️Séries ► Falha
+┣─📦Conteúdo Total ► N/A
+┣─✨Qualidade do VOD ► Péssima
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► avalcir01a
+┣─🔒Senha ► avalcir01b
+┣─🟢Status ► Online
+┣─🗓️Criado ► 09/08/2023
+┣─⏳Expira ► 11/04/2026
+┣─⌛Dias Restantes ► 20 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=avalcir01a&password=avalcir01b&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:00:36 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► hf5U6a
+┣─🔒Senha ► G55swc
+┣─🟢Status ► Online
+┣─🗓️Criado ► 10/11/2024
+┣─⏳Expira ► 13/04/2026
+┣─⌛Dias Restantes ► 22 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=hf5U6a&password=G55swc&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:00:59 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► csE4aF
+┣─🔒Senha ► RenHXx
+┣─🟢Status ► Online
+┣─🗓️Criado ► 18/05/2025
+┣─⏳Expira ► 15/04/2026
+┣─⌛Dias Restantes ► 23 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=csE4aF&password=RenHXx&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:02:56 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► Carvalho77998442940
+┣─🔒Senha ► hbgy59gut
+┣─🟢Status ► Online
+┣─🗓️Criado ► 01/08/2021
+┣─⏳Expira ► 03/04/2026
+┣─⌛Dias Restantes ► 12 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=Carvalho77998442940&password=hbgy59gut&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:05:58 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► elisaryasalarecanto01
+┣─🔒Senha ► 75001894857
+┣─🟢Status ► Online
+┣─🗓️Criado ► 30/05/2021
+┣─⏳Expira ► 18/04/2026
+┣─⌛Dias Restantes ► 27 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=elisaryasalarecanto01&password=75001894857&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:09:26 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► sauhWT
+┣─🔒Senha ► g4rDHE
+┣─🟢Status ► Online
+┣─🗓️Criado ► 13/01/2023
+┣─⏳Expira ► 18/04/2026
+┣─⌛Dias Restantes ► 27 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=sauhWT&password=g4rDHE&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:09:57 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► lucas6043
+┣─🔒Senha ► px2926br
+┣─🟢Status ► Online
+┣─🗓️Criado ► 04/02/2022
+┣─⏳Expira ► 26/03/2026
+┣─⌛Dias Restantes ► 4 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=lucas6043&password=px2926br&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:13:48 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► 4PVbxq
+┣─🔒Senha ► 1kkXsA
+┣─🟢Status ► Online
+┣─🗓️Criado ► 12/03/2026
+┣─⏳Expira ► 09/04/2026
+┣─⌛Dias Restantes ► 18 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=4PVbxq&password=1kkXsA&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:16:48 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► JoseCampos
+┣─🔒Senha ► jxg78py9mk
+┣─🟢Status ► Online
+┣─🗓️Criado ► 22/08/2022
+┣─⏳Expira ► 27/03/2026
+┣─⌛Dias Restantes ► 5 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=JoseCampos&password=jxg78py9mk&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:17:30 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://cldx-rio-go.top:80
+┣─📍IP do Host ► 172.67.185.202
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► CvkKCt
+┣─🔒Senha ► TbCvjD
+┣─🟢Status ► Online
+┣─🗓️Criado ► 23/10/2024
+┣─⏳Expira ► 08/04/2026
+┣─⌛Dias Restantes ► 17 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://cldx-rio-go.top:80/get.php?username=CvkKCt&password=TbCvjD&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 10:18:13 ⁃ 22/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+
+┏●•~¹°”ˆ˜¨ 𝙏𝙚𝙨𝙩𝙚 𝙙𝙤 𝙎𝙚𝙧𝙫𝙞𝙙𝙤𝙧 ¨˜ˆ”°¹~•
+┣─⭐Desempenho ► ★★★★☆ BOM
+┣─⚡Velocidade ► Média de 0.39s
+┣─📡Teste ► 20 Canais OK | 0 Falhas
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─📍IP do Host ► 104.21.16.126
+┣─📺Canais ► 1868
+┣─🎬Filmes ► 40130
+┣─🎞️Séries ► 15815
+┣─📦Conteúdo Total ► 57813
+┣─✨Qualidade do VOD ► ᴱˣᶜᵉˡᵉⁿᵗᵉ(💎)
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●•~¹°”ˆ˜¨ 𝙏𝙚𝙨𝙩𝙚 𝙙𝙤 𝙎𝙚𝙧𝙫𝙞𝙙𝙤𝙧 ¨˜ˆ”°¹~•
+┣─⭐Desempenho ► ★★★☆☆ MÉDIO
+┣─⚡Velocidade ► Média de 0.83s
+┣─📡Teste ► 20 Canais OK | 0 Falhas
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─📍IP do Host ► 172.67.212.126
+┣─📺Canais ► 1803
+┣─🎬Filmes ► 39292
+┣─🎞️Séries ► 15815
+┣─📦Conteúdo Total ► 56910
+┣─✨Qualidade do VOD ► ᴱˣᶜᵉˡᵉⁿᵗᵉ(💎)
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://p2toptz.pro:80
+┣─📍IP do Host ► 172.67.212.126
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► danielgnu
+┣─🔒Senha ► d5565778650
+┣─🟢Status ► Online
+┣─🗓️Criado ► 25/01/2026
+┣─⏳Expira ► 25/04/2026
+┣─⌛Dias Restantes ► 30 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://p2toptz.pro:80/get.php?username=danielgnu&password=d5565778650&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 01:16:15 ⁃ 26/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://p2toptz.pro:80
+┣─📍IP do Host ► 172.67.212.126
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► 365895
+┣─🔒Senha ► 872987
+┣─🟢Status ► Online
+┣─🗓️Criado ► 25/03/2026
+┣─⏳Expira ► 28/04/2026
+┣─⌛Dias Restantes ► 33 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://p2toptz.pro:80/get.php?username=365895&password=872987&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 01:30:28 ⁃ 26/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://p2toptz.pro:80
+┣─📍IP do Host ► 172.67.212.126
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► 642797441
+┣─🔒Senha ► 682250644
+┣─🟢Status ► Online
+┣─🗓️Criado ► 06/03/2026
+┣─⏳Expira ► 27/03/2026
+┣─⌛Dias Restantes ► 1 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://p2toptz.pro:80/get.php?username=642797441&password=682250644&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 01:30:57 ⁃ 26/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://p2toptz.pro:80
+┣─📍IP do Host ► 172.67.212.126
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► 369292200
+┣─🔒Senha ► 176471735
+┣─🟢Status ► Online
+┣─🗓️Criado ► 07/03/2026
+┣─⏳Expira ► 10/04/2026
+┣─⌛Dias Restantes ► 15 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://p2toptz.pro:80/get.php?username=369292200&password=176471735&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 01:31:35 ⁃ 26/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://p2toptz.pro:80
+┣─📍IP do Host ► 104.21.16.126
+┣─🗺️Região ► Toronto, Canada 🇨🇦
+┣─🏢Hospedagem ► Cloudflare, Inc.
+┣─👤Usuário ► 1234567890
+┣─🔒Senha ► 1234567890
+┣─🟢Status ► Online
+┣─🗓️Criado ► 18/03/2026
+┣─⏳Expira ► 18/04/2026
+┣─⌛Dias Restantes ► 23 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://p2toptz.pro:80/get.php?username=1234567890&password=1234567890&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online4
+┣─👽Hits Por ► sw
+┣─⏱️Scan ► 01:39:34 ⁃ 26/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+
+┏●•~¹°”ˆ˜¨ 𝙏𝙚𝙨𝙩𝙚 𝙙𝙤 𝙎𝙚𝙧𝙫𝙞𝙙𝙤𝙧 ¨˜ˆ”°¹~•
+┣─⭐Desempenho ► ★★☆☆☆ RAZOÁVEL
+┣─⚡Velocidade ► Média de 2.43s
+┣─📡Teste ► 15 Canais OK | 5 Falhas
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─📍IP do Host ► 45.11.57.39
+┣─📺Canais ► 1590
+┣─🎬Filmes ► 15200
+┣─🎞️Séries ► 4453
+┣─📦Conteúdo Total ► 21243
+┣─✨Qualidade do VOD ► ᴮᵒᵃ(👍)
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●•~¹°”ˆ˜¨ 𝙏𝙚𝙨𝙩𝙚 𝙙𝙤 𝙎𝙚𝙧𝙫𝙞𝙙𝙤𝙧 ¨˜ˆ”°¹~•
+┣─⭐Desempenho ► ★☆☆☆☆ RUIM
+┣─⚡Velocidade ► Média de 2.53s
+┣─📡Teste ► 16 Canais OK | 4 Falhas
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─📍IP do Host ► 45.11.57.39
+┣─📺Canais ► 1980
+┣─🎬Filmes ► 18153
+┣─🎞️Séries ► 4466
+┣─📦Conteúdo Total ► 24599
+┣─✨Qualidade do VOD ► ᴮᵒᵃ(👍)
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► 45.11.57.39
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─👤Usuário ► paulonegrao
+┣─🔒Senha ► r08mepqj27b
+┣─🟢Status ► Online
+┣─🗓️Criado ► 27/05/2022
+┣─⏳Expira ► 03/04/2026
+┣─⌛Dias Restantes ► 5 dias
+┣─📶Conexões Ativas ► 2
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=paulonegrao&password=r08mepqj27b&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 13:59:54 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► N/A
+┣─🗺️Região ► N/A, N/A 🌎
+┣─🏢Hospedagem ► N/A
+┣─👤Usuário ► ffz56gll56
+┣─🔒Senha ► b4fc6ffjnl
+┣─🟢Status ► Online
+┣─🗓️Criado ► 09/11/2023
+┣─⏳Expira ► 17/04/2026
+┣─⌛Dias Restantes ► 19 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=ffz56gll56&password=b4fc6ffjnl&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:01:21 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► 45.11.57.39
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─👤Usuário ► muniqueiribeiibpt1
+┣─🔒Senha ► 41a7nyvk
+┣─🟢Status ► Online
+┣─🗓️Criado ► 19/12/2022
+┣─⏳Expira ► 14/04/2026
+┣─⌛Dias Restantes ► 16 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=muniqueiribeiibpt1&password=41a7nyvk&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:02:34 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► N/A
+┣─🗺️Região ► N/A, N/A 🌎
+┣─🏢Hospedagem ► N/A
+┣─👤Usuário ► @padre23
+┣─🔒Senha ► @23claudio
+┣─🟢Status ► Online
+┣─🗓️Criado ► 18/10/2023
+┣─⏳Expira ► 28/04/2026
+┣─⌛Dias Restantes ► 30 dias
+┣─📶Conexões Ativas ► 2
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=@padre23&password=@23claudio&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online4
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:07:24 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► 45.11.57.39
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─👤Usuário ► leonardoliedke
+┣─🔒Senha ► mrtv19xx
+┣─🟢Status ► Online
+┣─🗓️Criado ► 19/06/2023
+┣─⏳Expira ► 28/04/2026
+┣─⌛Dias Restantes ► 30 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 2
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=leonardoliedke&password=mrtv19xx&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:12:26 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► 45.11.57.39
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─👤Usuário ► LeandroVRB
+┣─🔒Senha ► 32998161688
+┣─🟢Status ► Online
+┣─🗓️Criado ► 01/11/2023
+┣─⏳Expira ► 15/04/2026
+┣─⌛Dias Restantes ► 17 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=LeandroVRB&password=32998161688&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online4
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:20:39 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► 45.11.57.39
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─👤Usuário ► nezsfqmu
+┣─🔒Senha ► deu7jili
+┣─🟢Status ► Online
+┣─🗓️Criado ► 23/08/2023
+┣─⏳Expira ► 15/07/2026
+┣─⌛Dias Restantes ► 108 dias
+┣─📶Conexões Ativas ► 0
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=nezsfqmu&password=deu7jili&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:24:08 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► 45.11.57.39
+┣─🗺️Região ► Kyiv, Ukraine 🌎
+┣─🏢Hospedagem ► Virtual Systems LLC
+┣─👤Usuário ► 7181020303
+┣─🔒Senha ► use718102
+┣─🟢Status ► Online
+┣─🗓️Criado ► 08/03/2023
+┣─⏳Expira ► 14/04/2026
+┣─⌛Dias Restantes ► 16 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=7181020303&password=use718102&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:25:21 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+┏●-•~¹°”ˆ˜¨ 𝙏𝙤𝙥 𝙎𝙘𝙖𝙣𝙣𝙚𝙧 ¨˜ˆ”°¹~•-
+┣─🌐Host ► http://7semfronteiras.cc:80
+┣─📍IP do Host ► N/A
+┣─🗺️Região ► N/A, N/A 🌎
+┣─🏢Hospedagem ► N/A
+┣─👤Usuário ► wagnermar
+┣─🔒Senha ► wagner1341
+┣─🟢Status ► Online
+┣─🗓️Criado ► 04/06/2025
+┣─⏳Expira ► 13/04/2026
+┣─⌛Dias Restantes ► 15 dias
+┣─📶Conexões Ativas ► 1
+┣─📊Conexōes Máximas ► 1
+┣─🔗Link M3u⭏
+┃ ► http://7semfronteiras.cc:80/get.php?username=wagnermar&password=wagner1341&type=m3u_plus&output=ts
+┣─📄Combo ► Combo_Online3
+┣─👽Hits Por ► ApkBugado
+┣─⏱️Scan ► 14:35:12 ⁃ 29/03/2026
+┗●▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
