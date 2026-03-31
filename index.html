@@ -4,214 +4,165 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PAINEL VIP APKBUGADO</title>
-
 <style>
-body{
-  background:#000;
-  color:#00ff9c;
-  font-family:monospace;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  margin:0;
-}
-
-.card{
-  width:420px;
-  padding:20px;
-  border:1px solid #00ff9c;
-  border-radius:15px;
-  box-shadow:0 0 25px #00ff9c55;
-  text-align:center;
-}
-
-button,input{
-  width:100%;
-  padding:12px;
-  margin-top:10px;
-  border-radius:10px;
-  border:none;
-}
-
-button{
-  background:#00ff9c;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-input{
-  background:#000;
-  color:#00ff9c;
-  border:1px solid #00ff9c;
-}
-
-pre{
-  background:#000;
-  padding:12px;
-  margin-top:15px;
-  border-radius:10px;
-  font-size:12px;
-  text-align:left;
-  white-space:pre-wrap;
-  border:1px solid #00ff9c33;
-  min-height:120px;
-}
-
-.loader{
-  font-size:12px;
-  margin-top:10px;
-  opacity:0.8;
-}
-
-a{
-  display:block;
-  margin-top:8px;
-  color:#00ff9c;
-  text-decoration:none;
-  font-size:13px;
-}
+    body { background:#000; color:#00ff9c; font-family:monospace; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; }
+    .card { width:420px; padding:20px; border:1px solid #00ff9c; border-radius:15px; box-shadow:0 0 25px #00ff9c55; text-align:center; }
+    button, input { width:100%; padding:12px; margin-top:10px; border-radius:10px; border:none; font-family:monospace; }
+    button { background:#00ff9c; font-weight:bold; cursor:pointer; text-transform:uppercase; }
+    button:disabled { background:#004d2f; color:#008552; cursor:not-allowed; }
+    input { background:#000; color:#00ff9c; border:1px solid #00ff9c; text-align:center; outline:none; }
+    pre { background:#000; padding:12px; margin-top:15px; border-radius:10px; font-size:12px; text-align:left; white-space:pre-wrap; border:1px solid #00ff9c33; min-height:150px; color:#fff; }
+    .loader { font-size:12px; margin-top:10px; color:#00ff9c; font-weight:bold; min-height:18px; }
+    .links-top { margin-bottom:15px; }
+    .links-top a { color:#00ff9c; text-decoration:none; font-size:13px; margin:0 10px; border:1px solid #00ff9c33; padding:5px 10px; border-radius:5px; }
 </style>
 </head>
-
 <body>
 
 <div class="card">
+    <h3>🔐 PAINEL VIP APKBUGADO</h3>
+    
+    <div class="links-top">
+        <a href="https://is.gd/th2b0P" target="_blank">💎 VIP</a>
+        <a href="https://t.me/ApkBugado" target="_blank">📢 FREE</a>
+    </div>
 
-<h3>🔐 PAINEL VIP</h3>
+    <div id="login-box">
+        <input type="password" id="senha" placeholder="CÓDIGO VIP">
+        <button onclick="login()">DESBLOQUEAR ACESSO</button>
+    </div>
 
-<a href="https://is.gd/th2b0P" target="_blank">💎 GRUPO VIP</a>
-<a href="https://t.me/ApkBugado" target="_blank">📢 GRUPO FREE</a>
-
-<input type="password" id="senha" placeholder="Código VIP">
-<button onclick="login()">DESBLOQUEAR</button>
-
-<div id="painel" style="display:none;">
-<button onclick="gerar()">GERAR LISTA</button>
-<button onclick="copiar()">COPIAR</button>
-
-<div class="loader" id="status"></div>
-<pre id="out">Aguardando...</pre>
-</div>
-
+    <div id="painel" style="display:none;">
+        <button id="btn-gerar" onclick="gerar()">⚡ GERAR LISTA AGORA</button>
+        <button onclick="copiar()" style="background:#111; color:#00ff9c; border:1px solid #00ff9c; margin-top:5px;">📋 COPIAR DADOS</button>
+        
+        <div class="loader" id="status">SISTEMA ONLINE</div>
+        <pre id="out">Aguardando comando...</pre>
+    </div>
 </div>
 
 <script>
-
 const senhaCorreta = "1234";
 const base = "https://raw.githubusercontent.com/rafflores17-prog/painel-vip/main/";
 const arquivos = ["combo1.txt","combo2.txt"];
 
 let listaGlobal = [];
 let usados = [];
-let gerando = false;
+let emProcesso = false;
 
-// login
 function login(){
- let s = document.getElementById('senha').value.trim();
- if(s === senhaCorreta){
-   document.getElementById('painel').style.display = "block";
-   document.getElementById('senha').style.display = "none";
- } else {
-   alert("Senha incorreta");
- }
+    let s = document.getElementById('senha').value.trim();
+    if(s === senhaCorreta){
+        document.getElementById('painel').style.display = "block";
+        document.getElementById('login-box').style.display = "none";
+    } else {
+        alert("Senha incorreta, Mestre!");
+    }
 }
 
-// data fake
 function proximoMes(){
- let d = new Date();
- d.setMonth(d.getMonth()+1);
- return d.toLocaleDateString();
+    let d = new Date();
+    d.setMonth(d.getMonth()+1);
+    return d.toLocaleDateString();
 }
 
-// extrair
 function extrairM3U(texto){
- let lista = [];
- let links = texto.match(/http[^\s]+get\.php[^\s]+/g) || [];
+    let lista = [];
+    let regex = /http[^\s]+get\.php[^\s]+/g;
+    let links = texto.match(regex) || [];
 
- links.forEach(link=>{
-   let user = (link.match(/username=([^&]+)/)||[])[1];
-   let pass = (link.match(/password=([^&]+)/)||[])[1];
-   let host = link.split("/get.php")[0];
+    links.forEach(link=>{
+        let user = (link.match(/username=([^&]+)/)||[])[1];
+        let pass = (link.match(/password=([^&]+)/)||[])[1];
+        let host = link.split("/get.php")[0];
 
-   if(user && pass){
-     lista.push({link,user,pass,host,key:user+pass});
-   }
- });
-
- return lista;
+        if(user && pass && host){
+            lista.push({link, user, pass, host, key: user+pass});
+        }
+    });
+    return lista;
 }
 
-// carregar
-async function carregar(){
- if(listaGlobal.length > 0) return;
-
- for(let f of arquivos){
-   try{
-     let r = await fetch(base + f);
-     let txt = await r.text();
-     listaGlobal = listaGlobal.concat(extrairM3U(txt));
-   }catch(e){}
- }
-
- let unico = {};
- listaGlobal.forEach(c=>unico[c.key]=c);
- listaGlobal = Object.values(unico);
+async function carregarBanco(){
+    if(listaGlobal.length > 0) return;
+    for(let f of arquivos){
+        try{
+            let r = await fetch(base + f);
+            let txt = await r.text();
+            listaGlobal = listaGlobal.concat(extrairM3U(txt));
+        }catch(e){ console.log("Erro ao ler arquivo"); }
+    }
+    let unico = {};
+    listaGlobal.forEach(c => unico[c.key] = c);
+    listaGlobal = Object.values(unico);
 }
 
-// gerar
 async function gerar(){
+    if(emProcesso) return;
+    emProcesso = true;
 
- if(gerando) return; // 🔒 trava spam
- gerando = true;
+    let btn = document.getElementById('btn-gerar');
+    let status = document.getElementById('status');
+    let out = document.getElementById('out');
 
- let status = document.getElementById('status');
- let out = document.getElementById('out');
+    // 1. LIMPA TUDO NA HORA (Pro usuário não ver a lista anterior trocando)
+    out.textContent = "⚙️ INICIANDO BYPASS...";
+    status.textContent = "📡 CONECTANDO...";
+    btn.disabled = true;
 
- // 🔥 animação fake (não revela combos)
- status.textContent = "🔍 Escaneando servidor...";
- out.textContent = "Carregando conexão...";
+    await carregarBanco();
 
- await carregar();
+    // 2. ANIMAÇÃO DE CARREGAMENTO (Esconde o processo real)
+    let etapas = ["🔍 ESCANEANDO HOSTS...", "📡 MINERANDO COMBOS...", "🔐 VALIDANDO ACESSO...", "✅ FINALIZANDO!"];
+    
+    for(let i=0; i<etapas.length; i++){
+        status.textContent = etapas[i];
+        await new Promise(r => setTimeout(r, 600));
+    }
 
- setTimeout(()=>{
+    // 3. SELEÇÃO DA LISTA
+    let disponivel = listaGlobal.filter(c => !usados.includes(c.key));
+    if(disponivel.length === 0){
+        usados = [];
+        disponivel = listaGlobal;
+    }
 
-   let disponivel = listaGlobal.filter(c=>!usados.includes(c.key));
+    let c = disponivel[Math.floor(Math.random() * disponivel.length)];
+    usados.push(c.key);
 
-   if(disponivel.length === 0){
-     usados = [];
-     disponivel = listaGlobal;
-   }
+    // 4. EXIBIÇÃO FINAL COM LINKS DOS CANAIS
+    let resultado = `📺 VIP APKBUGADO MASTER
 
-   let c = disponivel[Math.floor(Math.random()*disponivel.length)];
-   usados.push(c.key);
+🔗 M3U LINK:
+${c.link}
 
-   status.textContent = "🟢 Conectado";
-
-   out.textContent = `📺 LISTA VIP APKBUGADO
-
-🔗 ${c.link}
-
-⚙️ XTREAM
+⚙️ XTREAM CODES:
 Host: ${c.host}
 User: ${c.user}
 Pass: ${c.pass}
 
-📅 Expira: ${proximoMes()}`;
+📅 VALIDADE: ${proximoMes()}
 
-   gerando = false;
+━━━━━━━━━━━━━━━
+📢 CANAL: t.me/ApkBugado
+💎 GRUPO: t.me/ApkBugadoGrupo
+━━━━━━━━━━━━━━━`;
 
- }, 1200); // tempo fake
-
+    out.textContent = resultado;
+    status.textContent = "🟢 LISTA GERADA COM SUCESSO!";
+    btn.disabled = false;
+    emProcesso = false;
 }
 
-// copiar
 function copiar(){
- let texto = document.getElementById('out').textContent;
- navigator.clipboard.writeText(texto);
- alert("Copiado!");
+    let texto = document.getElementById('out').textContent;
+    if(texto.includes("Aguardando") || texto.includes("INICIANDO")){
+        alert("Gere uma lista primeiro!");
+        return;
+    }
+    navigator.clipboard.writeText(texto);
+    alert("✅ Dados copiados para o seu Poco M6!");
 }
-
 </script>
 
 </body>
